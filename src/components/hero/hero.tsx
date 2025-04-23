@@ -41,7 +41,7 @@ const Homepage = () => {
       });
     };
 
-    createScrollAnimation(bgRef.current, { yPercent: 58 }, bgRef.current, { start: "top top", end: "2000px top" });
+    createScrollAnimation(bgRef.current, { y: 58 }, bgRef.current, { start: "top top", end: "2000px top" });
     createScrollAnimation(bgRef.current, { scale: 1.2 }, bgRef.current, { start: "top top", end: "300px top" });
     // createScrollAnimation(bgmountainRef.current, { yPercent: 60 }, bgmountainRef.current, { start: "top top", end: "1800px top", pin: true, pinSpacing: true, anticipatePin: 1 });
     // createScrollAnimation(bgmountainRef.current, { scale: 1.5 }, bgmountainRef.current, { start: "top top", end: "300px top" });
@@ -90,11 +90,11 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="relative md:h-[200vh] h-[180vh] w-full  text-black overflow-hidden">
+    <div className="relative md:h-[200vh] h-[180vh] w-full bg-[#FDB737]  text-black overflow-hidden">
       <div
         ref={bgRef}
-        className="absolute inset-0 z-10 -top-5  md:scale-105 scale-110 bg-center bg-cover bg-no-repeat "
-        style={{ backgroundImage: 'url("/SVG/frame.svg")', }}
+        className="absolute inset-0 z-10 -top-5    bg-center bg-cover  bg-no-repeat "
+        style={{ backgroundImage: 'url("/SVG/SVG/frame3.svg")',  }}
       />
       <img
         ref={bgmountainRef}
@@ -111,7 +111,7 @@ const Homepage = () => {
           <center>
             <img src="/SVG/SVG/logo.svg" className="w-54" alt="" />
           </center>
-          <h1 className="text-6xl md:text-8xl text-yellow-500 font-bold mt-2">
+          <h1 className="text-6xl md:text-8xl text-black font-bold mt-2">
             Haldi Rani
           </h1>
         </div>
@@ -121,7 +121,7 @@ const Homepage = () => {
         ref={plotRef}
         className="lastdiv relative w-full h-screen flex items-center justify-center"
       >
-        <div ref={plotTextRef} className="text-center max-w-xl">
+        <div ref={plotTextRef} className="text-center  max-w-xl">
           <h2 className="text-4xl font-semibold mb-4">Presents</h2>
           <p className="text-lg opacity-90">
             Haldi Rani offers premium turmeric and spices, blending tradition
