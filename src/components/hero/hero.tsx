@@ -90,7 +90,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="relative md:h-[200vh] h-[180vh] w-full bg-white text-black overflow-hidden">
+    <div className="relative md:h-[200vh] h-[180vh] w-full  text-black overflow-hidden">
       <div
         ref={bgRef}
         className="absolute inset-0 z-10 -top-5  md:scale-105 scale-110 bg-center bg-cover bg-no-repeat "
@@ -99,11 +99,11 @@ const Homepage = () => {
       <img
         ref={bgmountainRef}
         src="/SVG/mountains-8.png"
-        className="absolute z-8 md:top-80 top-180 md:scale-110 scale-200"
+        className="absolute z-9 md:top-80 top-180 md:scale-110 scale-200"
         alt=""
       />
 
-      <div className="relative z-10 h-screen flex flex-col justify-center items-center text-center px-4">
+      <div className="relative z-8 h-screen flex flex-col justify-center items-center text-center px-4">
         <div
           ref={titleRef}
           className="pt-20 text-4xl md:text-6xl font-bold font-mono tracking-wider"
