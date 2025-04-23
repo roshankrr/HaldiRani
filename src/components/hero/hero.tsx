@@ -34,7 +34,7 @@ const Homepage = () => {
   useEffect(() => {
     // y1 -> bg parallax scrollY [0, 1300] => y: "0%" to "60%"
     gsap.to(bgRef.current, {
-      yPercent: 60,
+      yPercent: 58,
       scrollTrigger: {
         trigger: bgRef.current,
         start: "top top",
@@ -126,15 +126,15 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="relative h-[200vh] bg-white text-black overflow-hidden">
+    <div className="relative md:h-[200vh] h-[180vh] w-full bg-white text-black overflow-hidden">
       {/* Background */}
       
       <div
         ref={bgRef}
-        className="absolute  inset-0 z-10 top-0  bg-center bg-cover"
+        className="absolute  inset-0 z-10 top-0 md:scale-100   bg-center bg-cover"
         style={{ backgroundImage: 'url("/SVG/SVG/frame.svg")',width:'100%' }}
       />
-      <img ref={bgmountainRef} src="/SVG/mountains-8.png"   className="absolute top-80 scale-110"  alt="" />
+      <img ref={bgmountainRef} src="/SVG/mountains-8.png"   className="absolute md:top-80 top-180 md:scale-110 scale-200"  alt="" />
       {/* <div
         ref={bgmountainRef}
         className=" absolute inset-0 z-5 bg-center  bg-cover"
