@@ -93,7 +93,7 @@ const Homepage = () => {
     <div className="relative md:h-[200vh] h-[180vh] w-full bg-white text-black overflow-hidden">
       <div
         ref={bgRef}
-        className="absolute inset-0 z-10 top-0  md:scale-105 scale-110 bg-center bg-cover bg-no-repeat "
+        className="absolute inset-0 z-10 -top-5  md:scale-105 scale-110 bg-center bg-cover bg-no-repeat "
         style={{ backgroundImage: 'url("/SVG/frame.svg")', }}
       />
       <img
