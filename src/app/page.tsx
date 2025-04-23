@@ -11,6 +11,8 @@ const Main = () => {
     </div>
     <div className="h-screen w-full bg-white text-black overflow-hidden">
     </div>
+    <div className="h-screen w-full bg-white text-black overflow-hidden">
+    </div>
     </>
     
   );
